@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Task</title>
+
+    <!-- ✅ CSS LINK FIX -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>➕ Add New Task</h2>
+
+        <form action="/add" method="POST">
+            <input type="text" name="title" placeholder="Enter task..." required>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <a href="/" class="back-btn">Back</a>
+    </div>
+</div>
+
+</body>
+</html>
